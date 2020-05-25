@@ -16,6 +16,9 @@
 		74535E292468E5B100B4F467 /* CV19TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74535E282468E5B100B4F467 /* CV19TrackerTests.swift */; };
 		745FE088247BB92D0006B239 /* WorldResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745FE087247BB92D0006B239 /* WorldResponseModel.swift */; };
 		745FE08A247BBD9C0006B239 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745FE089247BBD9C0006B239 /* Constant.swift */; };
+		745FE08D247BC9710006B239 /* TrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745FE08C247BC9710006B239 /* TrackerService.swift */; };
+		745FE090247BCBC60006B239 /* WorldDetailsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745FE08F247BCBC60006B239 /* WorldDetailsResponseModel.swift */; };
+		745FE092247BD03B0006B239 /* JSONSchemaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745FE091247BD03B0006B239 /* JSONSchemaSupport.swift */; };
 		D93332715B141327EBEC9573 /* Pods_CV19TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6591C167BBFB2DFBC427665 /* Pods_CV19TrackerTests.framework */; };
 		E2FB502F1A67B024662AC37D /* Pods_CV19Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57E844B391F8377CD10BD55 /* Pods_CV19Tracker.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		74535E2A2468E5B100B4F467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		745FE087247BB92D0006B239 /* WorldResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldResponseModel.swift; sourceTree = "<group>"; };
 		745FE089247BBD9C0006B239 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		745FE08C247BC9710006B239 /* TrackerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerService.swift; sourceTree = "<group>"; };
+		745FE08F247BCBC60006B239 /* WorldDetailsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDetailsResponseModel.swift; sourceTree = "<group>"; };
+		745FE091247BD03B0006B239 /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSchemaSupport.swift; sourceTree = "<group>"; };
 		801D2023BB2B4FA11E26694A /* Pods-CV19TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CV19TrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-CV19TrackerTests/Pods-CV19TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E57E844B391F8377CD10BD55 /* Pods_CV19Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CV19Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6591C167BBFB2DFBC427665 /* Pods_CV19TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CV19TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +112,7 @@
 		74535E102468E5AD00B4F467 /* CV19Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				745FE08E247BCA710006B239 /* Mock */,
 				745FE086247BB8AB0006B239 /* Helper */,
 				745FE085247BB8A20006B239 /* Service */,
 				745FE083247BB87F0006B239 /* ViewModel */,
@@ -143,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				745FE087247BB92D0006B239 /* WorldResponseModel.swift */,
+				745FE08F247BCBC60006B239 /* WorldDetailsResponseModel.swift */,
 			);
 			path = ResponseModel;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 		745FE085247BB8A20006B239 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				745FE08C247BC9710006B239 /* TrackerService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -165,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				745FE089247BBD9C0006B239 /* Constant.swift */,
+				745FE091247BD03B0006B239 /* JSONSchemaSupport.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -174,6 +184,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		745FE08E247BCA710006B239 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		93CDE59B4BB3A7FC09E0599C /* Frameworks */ = {
@@ -371,6 +388,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745FE08D247BC9710006B239 /* TrackerService.swift in Sources */,
+				745FE090247BCBC60006B239 /* WorldDetailsResponseModel.swift in Sources */,
+				745FE092247BD03B0006B239 /* JSONSchemaSupport.swift in Sources */,
 				74535E162468E5AD00B4F467 /* ViewController.swift in Sources */,
 				74535E122468E5AD00B4F467 /* AppDelegate.swift in Sources */,
 				745FE08A247BBD9C0006B239 /* Constant.swift in Sources */,
