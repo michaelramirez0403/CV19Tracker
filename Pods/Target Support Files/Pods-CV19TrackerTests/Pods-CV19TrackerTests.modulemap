@@ -1,0 +1,6 @@
+framework module Pods_CV19TrackerTests {
+  umbrella header "Pods-CV19TrackerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
